@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1d4ed8;
+  --secondary: #334155;
+  --success: #15803d;
+  --danger: #b91c1c;
+  --warning: #a16207;
+}
+* { box-sizing: border-box; }
+html { background: #f8fafc; }
+body { margin: 0; background: #f8fafc; color: #0f172a; font-family: Arial, Helvetica, sans-serif; }
+button, input, textarea, select { font: inherit; }
+button { touch-action: manipulation; }

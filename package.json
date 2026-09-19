@@ -1,0 +1,11 @@
+{
+  "name": "election-realtime-platform",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:frontend": "npm --workspace @election/frontend run dev",
+    "dev:backend": "npm --workspace @election/backend run dev",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  }
+}

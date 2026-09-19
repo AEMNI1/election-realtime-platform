@@ -1,0 +1,13 @@
+-- No application password must be placed in SQL in clear text.
+-- Create the first REGIONAL_ADMIN with the backend seed script:
+--
+-- PowerShell (from project root):
+--   cd apps/backend
+--   Copy-Item .env.example .env
+--   # Fill SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, JWT_SECRET,
+--   # ADMIN_USERNAME and ADMIN_PASSWORD in .env
+--   cd ../..
+--   npm run seed:admin --workspace @election/backend
+--
+-- All additional local bureaux and observers are then created from
+-- Dashboard > Administration using Username + Password.
